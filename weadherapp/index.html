@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather_App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body style="margin-top: 1%;display: flex;flex-direction: column;align-items: center;justify-content: center;gap: 4%;background-color: lightgray;">
+    <div style="margin-bottom: 2%;">
+      <input id="search" type="text" placeholder="Search" />
+
+      <button id="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+    <div id="div-error" style="display: none;"><p id="error" style="color: red;"></p></div>
+    <div style="width: 30%;border: 1px solid;border-radius: 8px;text-align: center;background-color: rgb(194, 230, 241);display: flex;flex-direction: column;align-items: center;">
+        <h1 id="city">city name</h1>
+        <div style="display: flex;align-items: center;"><h3 id="temperature">30</h3><span>°C</span>
+        </div>
+        <p id="description"></p>
+        <div style="display: flex;width: 100%; justify-content: space-around;">
+        <div style="display: flex;align-items: center;"><h4 id="humidity">72</h4>%</div>
+        <div style="display: flex;align-items: center;"><h4 id="wind">2.7</h4> Km/Hr</div>
+    </div>
+    </div>
+    <script src="weatherJS.js"></script>
+  </body>
+</html>
